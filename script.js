@@ -3,7 +3,7 @@ function format(string) {
   for (let i = 0; i < string.length; i++) {
     if (
       (string.charCodeAt([i]) >= 65 && string.charCodeAt([i]) <= 90) ||
-      (string.charCodeAt([i]) >= 97 && string.charCodeAt([i]) <= 122)
+      (string.charCodeAt([i]) >= 97 && string.charCodeAt([i]) <= 122) || string[i] == " "
     ) {
       res += string[i];
     }
